@@ -1,13 +1,17 @@
 
 import './App.css'
-import { useUsers } from './context/userContext'
+import {Routes , Route} from 'react-router-dom'
+import Form from './pages/form'
 
 
 
 
 
 function App() {
-
+    
+    return <Routes>
+                <Route path='/' element={<Form/>} />
+            </Routes> 
 }
 
 
