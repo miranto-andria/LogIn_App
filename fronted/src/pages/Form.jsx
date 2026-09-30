@@ -9,9 +9,6 @@ export default function Form() {
   const users = useUsers(state => state.users)
   const dispatch = useUsers(state => state.dispatch)
   const [match , setMatch] = useState(false)
-  console.log(users);
-  
-  
   const handleSubmit = (e) =>{
     e.preventDefault()
   const dataUser = new FormData(e.target)
